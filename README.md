@@ -14,6 +14,11 @@ Using BeautifulSoup, the script parses the HTML to locate individual mod entries
 ## How to Install
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/mod-info-fetcher.git
-   cd mod-info-fetcher
+   git clone https://github.com/lardanik/Steam-Mod-Inspector
+   ```
+   ```
+   cd Steam-Mod-Inspector
+   ```
+## Install dependencies:
+```
    pip install -r requirements.txt
