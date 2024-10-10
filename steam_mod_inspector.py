@@ -74,30 +74,25 @@ def fetch_mods_from_collection(url):
         print("Unable to access collection page.")
         return []
 
-# Вывод сообщения о начале процесса
 print("Scanning...")
 
 mods = fetch_mods_from_collection(collection_url)
 
-# Очистка строки перед выводом сообщения о завершении сканирования
 clear_line()
 print("Scanning complete!")
 print("Choose where to save the file.")
 
-# Создание окна для выбора пути сохранения файла
 root = Tk()
-root.withdraw()  # Скрыть главное окно
+root.withdraw()
 save_path = filedialog.asksaveasfilename(
     title="Save File",
     defaultextension=".txt",
     filetypes=[("Text files", "*.txt"), ("All files", "*.*")]
 )
 
-# Проверка и создание папки, если она не существует
 if save_path:
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
-    # Сохранение информации о модах в текстовый файл
     with open(save_path, 'w', encoding='utf-8') as file:
         for mod in mods:
             file.write(f"ModName: {mod['title']}, Workshop ID: {mod['workshop_id']}, Mod ID: {mod['mod_id']}\n")
