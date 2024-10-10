@@ -22,3 +22,8 @@ Using BeautifulSoup, the script parses the HTML to locate individual mod entries
 ## Install dependencies:
 ```
    pip install -r requirements.txt
+```
+OR
+```
+pip install requests==2.31.0
+pip install beautifulsoup4==4.12.2
