@@ -13,7 +13,7 @@ Using BeautifulSoup, the script parses the HTML to locate individual mod entries
 
 ## How to Install
 1. Clone this repository:
-   ```bash
+   ```
    git clone https://github.com/lardanik/Steam-Mod-Inspector
    ```
    ```
@@ -27,3 +27,6 @@ OR
 ```
 pip install requests==2.31.0
 pip install beautifulsoup4==4.12.2
+```
+## How to Run
+Run the script: steam_workshop_monitor
