@@ -5,3 +5,15 @@ Fetching Mod Information:
 Once the URL is provided, the script begins scanning the collection. It makes an HTTP request to fetch the page content.
 Using BeautifulSoup, the script parses the HTML to locate individual mod entries within the collection. It extracts relevant data, such as mod titles and their associated links.
 ![Screenshot_1](https://github.com/user-attachments/assets/893ea3b1-ab70-4bc8-9c6b-69e85a632d5d)
+## Requirements
+- Python 3.12 or later
+- The following packages:
+  - requests==2.31.0
+  - beautifulsoup4==4.12.2
+
+## How to Install
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/mod-info-fetcher.git
+   cd mod-info-fetcher
+   pip install -r requirements.txt
