@@ -29,4 +29,4 @@ pip install requests==2.31.0
 pip install beautifulsoup4==4.12.2
 ```
 ## How to Run
-Run the script: steam_workshop_monitor
+Run the script: steam_workshop_monitor.py
