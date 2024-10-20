@@ -78,7 +78,6 @@ print("Scanning...")
 
 mods = fetch_mods_from_collection(collection_url)
 
-clear_line()
 print("Scanning complete!")
 print("Choose where to save the file.")
 
